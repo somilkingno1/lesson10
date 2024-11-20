@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkslategray;
+    color:aqua ;
+}
+h1 {
+    color: aquamarine;
+
+}
+
+/* Attribute Selector */
+a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+/* Child Selector */
+ul > li {
+    font-weight: bold;
+}
+
+/* Sibling Selector */
+h1 + p {
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* :hover Pseudo-Class */
+ul li:hover {
+    color: cornflowerblue;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(3) {
+background-color: darkgoldenrod;
+}
+/* :not(selector) Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+/* ::before Pseudo-element */
+ul li::before {
+    content:"🚀";
+}
+/* ::after Pseudo elemnt */
+a::after {
+    content:'🌌';
+}
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size:200%;
+    color: darkseagreen;
+}
